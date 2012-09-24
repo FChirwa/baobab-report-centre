@@ -1,0 +1,191 @@
+@import "../../../stylesheets/application.css";
+body {
+    color: #404040;
+    font-family: Verdana,Tahoma,Arial;
+}
+body, #wrapper {
+    background-color: #E2E3E4;
+}
+#top-menu, #header, #main {
+    margin: 0 20px;
+}
+#top-menu {
+    background-color: #303030;
+    font-size: 8pt;
+}
+#header {
+    background-color: #67B243;
+    background-image: url("../images/header.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    border-left: 1px solid #288C44;
+    border-right: 1px solid #288C44;
+}
+#main {
+    background-color: #EBECED;
+    border-bottom: 1px solid #B0B7BC;
+    border-left: 1px solid #B0B7BC;
+    border-right: 1px solid #B0B7BC;
+}
+#footer {
+    background-color: transparent;
+    border: 0 none;
+}
+.mypage-box {
+    color: inherit;
+}
+#top-menu #loggedas {
+    color: #E2E3E4;
+}
+#top-menu #loggedas a {
+    color: #EE8206;
+}
+#sidebar .box {
+    border: 1px solid #D2D2D2;
+}
+#sidebar h3 {
+    margin-right: 1em;
+}
+#sidebar h3, h2, h3, .wiki h1, .wiki h2 {
+    border-bottom: 1px dotted #696969;
+    color: #EE8206;
+}
+.wiki h3, .wiki h4, .wiki h5 {
+    color: #EE8206;
+}
+.wiki h5 {
+    font-size: 12px;
+}
+#main-menu li a:hover {
+    background-color: #68AE7A;
+}
+#login-form table, #errorExplanation, div.flash, .nodata, .warning {
+    border-width: 1px;
+}
+table.list {
+    border: medium none;
+}
+table.list th, table.list td {
+    border: 1px solid #FFFFFF;
+}
+table.list th {
+    background-color: #ECECED;
+    color: #696969;
+    padding: 2px;
+}
+tr.odd.priority-5 {
+    background-color: #FFC4C4;
+}
+tr.even.priority-5 {
+    background-color: #FFD4D4;
+}
+tr.odd.priority-4 {
+    background-color: #FFC4C4;
+}
+tr.even.priority-4 {
+    background-color: #FFD4D4;
+}
+tr.odd.priority-3 {
+    background-color: #FFEEEE;
+}
+tr.even.priority-3 {
+    background-color: #FFF2F2;
+}
+tr.odd.priority-1 {
+    background-color: #EAF7FF;
+}
+tr.even.priority-1 {
+    background-color: #F2FAFF;
+}
+tr.closed {
+    color: #999999;
+}
+table.progress {
+    border: 1px solid #696969;
+}
+table.progress td.closed {
+    background-color: #67B243;
+}
+table.progress td.todo {
+    background-color: #FFFFFF;
+}
+table.list table.progress th, table.list table.progress td {
+    border: inherit;
+}
+input[type="text"], input[type="password"], textarea, select {
+    border: 1px solid #E4E4E4;
+    padding: 2px;
+}
+#header input[type="text"], #header input[type="password"], #header textarea, #header select {
+    border: 1px solid #288C44;
+}
+h1, h2, h3, h4 {
+    font-family: Tahoma,Verdana,Arial;
+}
+h2, .wiki h1 {
+    font-size: 18px;
+}
+h3, .wiki h2 {
+    font-size: 14px;
+}
+a, a:link, a:visited {
+    color: #569139;
+}
+.contextual a, .contextual a:link, .contextual a:visited, a.icon, a.icon:link, a.icon:visited {
+    color: #EE8206;
+}
+a.icon.icon-folder, a.icon.icon-folder:link, a.icon.icon-folder:visited, a.icon.icon-file, a.icon.icon-file:link, a.icon.icon-file:visited {
+    color: #569139;
+}
+th a, th a:link, .th a:visited, .version a, .version a:link, .version a:visited {
+    color: #EE8206;
+}
+tr.priority-5 a, tr.priority-5 a:link, tr.priority-5 a:visited, tr.priority-4 a, tr.priority-4 a:link, tr.priority-4 a:visited, tr.priority-3 a, tr.priority-3 a:link, tr.priority-3 a:visited, a.priority-5, a.priority-5:link, a.priority-5:visited, a.priority-4, a.priority-4:link, a.priority-4:visited, a.priority-3, a.priority-3:link, a.priority-3:visited {
+    color: #990000;
+}
+tr.priority-1 a, tr.priority-1 a:link, tr.priority-1 a:visited, a.priority-1, a.priority-1:link, a.priority-1:visited {
+    color: #555599;
+}
+a.issue.closed, a.issue.closed:link, a.issue.closed:visited {
+    text-decoration: none;
+}
+#content .tabs ul {
+    border-bottom: 1px solid #303030;
+}
+#content .tabs ul li a {
+    background-color: #EE8206;
+    border-color: transparent transparent #303030;
+    color: #FFFFFF;
+}
+#content .tabs ul li a:hover {
+    background-color: #67B243;
+}
+#content .tabs ul li a.selected {
+    border-color: #303030 #303030 #FFFFFF;
+    color: #EE8206;
+}
+div.issue, div.wiki ul.toc {
+    border: 1px dotted #696969;
+}
+div.wiki ul.toc a {
+    color: #404040;
+}
+div.wiki ul.toc a:hover {
+    color: #EE8206;
+}
+div.author span.author a {
+    color: #EE8206;
+}
+div.wiki table, div.wiki th, div.wiki td {
+    padding: 2px;
+}
+div.wiki th {
+    background-color: #ECECED;
+    color: #696969;
+}
+#header h1 {
+    background-image: url("../images/baobab_logo.png");
+    background-repeat: no-repeat;
+    line-height: 37px;
+    padding-left: 136px;
+}

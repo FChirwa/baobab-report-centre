@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Baobab Health Trust Report Centre</title>
+
+
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1307458748);}
+    </style>
+<![endif]-->
+
+<!-- page specific tags -->
+
+
+</head>
+<body class="theme-Redjourn controller-welcome action-index">
+<table width="95%" align ="center"><tr><td id="header" colspan = "2">     
+    <h1>Baobab Health Trust Report Centre</h1>
+    
+</td></tr>
+<tr>
+<td class="nosidebar" id="main" align = "left"  colspan = "2">			
+        <h2><a href= "#">Home</a> | <a href= "/admin/login">Sign Out</a></h2>
+</td>
+</tr>
+<tr>
+<td valign="top">
+  <p>Welcome to Baobab Health Trust Report Centre. This is where you can view various report data of all Baobab Health's projects.</p>  
+</td>
+<td width = "30%">Reports
+<table align = "right">
+<tr>
+	<td><a href="">OPD</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="">IPD</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="">BART</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="">ANC</a>
+	</td>
+</tr>
+<tr>
+	<td> <a href="">Radiology</a>
+	</td>
+</tr>
+</table>
+
+</td>
+</tr>
+    
+
+
+
+<!--
+This script replaces the <a id="time-tracker-menu">...</a> element by a span with the same id.
+This is needed as we want several links for our time tracker menu item.
+The span is populated with current time tracker state.
+(no AJAX request here, this allows to have the time tracker immediately visible)
+-->
+<script type="text/javascript">
+//<![CDATA[
+document.observe('dom:loaded', function () {
+    $('time-tracker-menu').replace(
+    '<span id="time-tracker-menu"><span class=\'icon icon-time\'>Not running&nbsp;<\/span>    <span>        <a href=\"/time_trackers\" class=\"icon-action icon-list-action\" title=\"list\"><\/a>    <\/span></span>');
+    });
+//]]>
+</script>
+
+<!--
+This script defines the updateTimeTrackerMenu() function which will update
+the time tracker menu item using an AJAX request to retrieve the data
+-->
+<script type="text/javascript">
+//<![CDATA[
+function updateTimeTrackerMenu() {
+    Ajax.activeRequestCount--; new Ajax.Request('/time_trackers/render_menu', {asynchronous:true, evalScripts:true, onComplete:function(request){updateElementIfChanged('time-tracker-menu', request.responseText);}, parameters:'authenticity_token=' + encodeURIComponent('Tbnj4YeMdH27Y81AyfmXjm5Fz22qcdjFjYYLwodry9o=')});}
+//]]>
+</script>
+
+<!--
+This script periodically updates the time tracker menu item to reflect any changes in the tracking state
+Refresh rate is taken from settings. If settings is invalid, 60 secs is used. The minimum value is 5 secs.
+-->
+<script type="text/javascript">
+//<![CDATA[
+new PeriodicalExecuter(updateTimeTrackerMenu, 60);
+//]]>
+</script>
+
+
+</table>
+</body>
+</html>
+

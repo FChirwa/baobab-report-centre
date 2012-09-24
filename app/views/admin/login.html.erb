@@ -1,0 +1,81 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "XHTML1-s.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml"
+      xml:lang="en" lang="en" >
+
+  <head>
+    <title>Baobab Health Trust Central Login</title>
+    <link rel="stylesheet" type="text/css" href="file2.css" />
+    <link rel="stylesheet" type="text/css" href="file1.css" />
+    <link rel="icon" type="image/png" href="/themes/simple/favicon.png" />
+  </head>
+
+  <body onload="if (document.getElementById('username')) document.getElementById('username').focus()">
+    
+<table id="login-box">
+  <tr>
+    <td colspan="2">
+      <div id="headline-container">
+        <strong>Baobab Health Trust</strong><br>
+         Report Centre
+      </div>
+    </td>
+  </tr>
+
+  
+
+  <tr>
+    <td id="logo-container">
+      <%= image_tag("logo.png")%>
+    </td>
+    <td id="login-form-container">
+      
+<form action="manage/show" id="login-form"
+      onsubmit="submitbutton = document.getElementById('login-submit'); submitbutton.value='Please wait...'; submitbutton.disabled=true; return true;">
+  <table id="form-layout">
+    <tr>
+      <td id="username-label-container">
+        <label id="username-label" for="username">
+          Username
+        </label>
+      </td>
+      <td id="username-container">
+        <input type="text" id="username" name="username"
+               size="32" tabindex="1" accesskey="u" />
+      </td>
+    </tr>
+    <tr>
+      <td id="password-label-container">
+        <label id="password-label" for="password">
+          Password
+        </label>
+      </td>
+      <td id="password-container">
+        <input type="password" id="password" name="password"
+               size="32" tabindex="2" accesskey="p" autocomplete="off" />
+      </td>
+    </tr>
+    <tr>
+      <td />
+      <td id="submit-container"><!--
+        <input type="hidden" id="lt" name="lt" value="LT-1348233474rC217F0D25795B97F71" />
+        <input type="hidden" id="service" name="service" value="http://192.168.5.100/login?back_url=http%3A%2F%2F192.168.5.100%2Fissues%2F4103" /> -->
+        <input type="submit" class="button" accesskey="l" value="LOGIN"
+               tabindex="4" id="login-submit" align = "right"/>
+      </td>
+    </tr>
+    <tr>
+      <!-- <td colspan="2" id="infoline">
+        Powered by <a href="http://code.google.com/p/rubycas-server/">RubyCAS-Server</a>
+      </td> -->
+    </tr>
+  </table>
+</form>
+    </td>
+  </tr>
+</table>
+
+  </body>
+</html>
